@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         /*
-        * Zapa malo mi
+        * Zapa malo mi nekaj
          */
     }
 }
