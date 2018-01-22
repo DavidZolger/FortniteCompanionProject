@@ -23,7 +23,6 @@
 
 
 
-        
         <activity android:name=".activity.ProfileActivity"></activity>
         <activity android:name=".activity.FavouritesActivity"></activity>
         <activity android:name=".activity.ComparisonActivity"></activity>
