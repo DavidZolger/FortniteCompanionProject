@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">FortniteCompanionProject</string>
+    <string name="app_name">Fortnite Companion</string>
+    <string name="potrdi">Potrdi</string>
+    <string name="vredu">Vredu</string>
+    <string name="vzdevek">Vzdevek</string>
+    <string name="pc">PC</string>
+    <string name="xbox">XBOX</string>
+    <string name="ps4">PS4</string>
+    <string name="igralec1">Igralec 1</string>
+    <string name="igralec2">Igralec 2</string>
+    <string name="solo">SOLO</string>
+    <string name="duo">DUO</string>
+    <string name="squad">SQUAD</string>
 </resources>

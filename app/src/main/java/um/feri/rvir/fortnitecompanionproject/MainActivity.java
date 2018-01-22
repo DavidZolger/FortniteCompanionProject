@@ -1,10 +1,12 @@
 package um.feri.rvir.fortnitecompanionproject;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
@@ -17,6 +19,8 @@ import java.util.logging.Logger;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
+import um.feri.rvir.fortnitecompanionproject.activity.FavouritesActivity;
+import um.feri.rvir.fortnitecompanionproject.activity.ProfileActivity;
 import um.feri.rvir.fortnitecompanionproject.parserUtils.IgralecFull;
 import um.feri.rvir.fortnitecompanionproject.parserUtils.IgralecSimplifier;
 import um.feri.rvir.fortnitecompanionproject.parserUtils.IgralecSimple;
@@ -27,12 +31,21 @@ public class MainActivity extends AppCompatActivity {
     private TextView textViewStatus;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         textViewStatus = findViewById(R.id.textViewStatus);
+        Button podatki = (Button) findViewById(R.id.button);
+        podatki.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(v.getContext(), FavouritesActivity.class);
+                startActivity(i);
+            }
+        });
         /*
         * Zapa malo mi nekaj
          */
