@@ -1,10 +1,121 @@
 package um.feri.rvir.fortnitecompanionproject.parserUtils;
 
+import android.content.Context;
+
+import com.orm.SugarRecord;
+
 /**
  * Created by Miha on 18/01/2018.
  */
 
-public class IgralecSimple {
+public class IgralecSimple extends SugarRecord<IgralecSimple>{
+
+    public IgralecSimple() {
+    }
+
+    public IgralecSimple(String accountId, int platformId, String platformName, String platformNameLong, String epicUserHandle, int soloScore, int soloScoreRank, int soloTop1, int soloTop1Rank, int soloTop10, int soloTop10Rank, int soloTop25, int soloTop25Rank, double soloKillDeath, int soloKillDeathRank, double soloWinRadio, double soloWinRadioRank, int soloMatches, int soloMatchesRank, int soloKills, int soloKillsRank, int soloMinutesPlayed, int soloMinutesPlayedRank, String soloMinutesPlayedHours, double soloKillsPerMinute, int soloKillsPerMinuteRank, double soloKillsPerMatch, int soloKillsPerMatchRank, String soloAvgMatchTime, int soloAvgMatchTimeRank, double soloScorePerMatch, int soloScorePerMatchRank, double soloScorePerMinute, int soloScorePerMinuteRank, int duoScore, int duoScoreRank, int duoTop1, int duoTop1Rank, int duoTop5, int duoTop5Rank, int duoTop12, int duoTop12Rank, double duoKillDeath, int duoKillDeathRank, double duoWinRadio, double duoWinRadioRank, int duoMatches, int duoMatchesRank, int duoKills, int duoKillsRank, int duoMinutesPlayed, int duoMinutesPlayedRank, String duoMinutesPlayedHours, double duoKillsPerMinute, int duoKillsPerMinuteRank, double duoKillsPerMatch, int duoKillsPerMatchRank, String duoAvgMatchTime, int duoAvgMatchTimeRank, double duoScorePerMatch, int duoScorePerMatchRank, double duoScorePerMinute, int duoScorePerMinuteRank, int squadScore, int squadScoreRank, int squadTop1, int squadTop1Rank, int squadTop3, int squadTop3Rank, int squadTop6, int squadTop6Rank, double squadKillDeath, int squadKillDeathRank, double squadWinRadio, double squadWinRadioRank, int squadMatches, int squadMatchesRank, int squadKills, int squadKillsRank, int squadMinutesPlayed, int squadMinutesPlayedRank, String squadMinutesPlayedHours, double squadKillsPerMinute, int squadKillsPerMinuteRank, double squadKillsPerMatch, int squadKillsPerMatchRank, String squadAvgMatchTime, int squadAvgMatchTimeRank, double squadScorePerMatch, int squadScorePerMatchRank, double squadScorePerMinute, int squadScorePerMinuteRank, String lifeTimeScore, int lifeTimeMatchesPlayed, int lifeTimeWins, String lifeTimeWinsProcent, int lifeTimeKills, double lifeTimeKillDeath, double lifeTimeKillsPerMinute, String lifeTimeTimePlayed, String lifeTimeAvgSurvivalTime) {
+        this.accountId = accountId;
+        this.platformId = platformId;
+        this.platformName = platformName;
+        this.platformNameLong = platformNameLong;
+        this.epicUserHandle = epicUserHandle;
+        this.soloScore = soloScore;
+        this.soloScoreRank = soloScoreRank;
+        this.soloTop1 = soloTop1;
+        this.soloTop1Rank = soloTop1Rank;
+        this.soloTop10 = soloTop10;
+        this.soloTop10Rank = soloTop10Rank;
+        this.soloTop25 = soloTop25;
+        this.soloTop25Rank = soloTop25Rank;
+        this.soloKillDeath = soloKillDeath;
+        SoloKillDeathRank = soloKillDeathRank;
+        this.soloWinRadio = soloWinRadio;
+        SoloWinRadioRank = soloWinRadioRank;
+        this.soloMatches = soloMatches;
+        SoloMatchesRank = soloMatchesRank;
+        this.soloKills = soloKills;
+        this.soloKillsRank = soloKillsRank;
+        this.soloMinutesPlayed = soloMinutesPlayed;
+        this.soloMinutesPlayedRank = soloMinutesPlayedRank;
+        this.soloMinutesPlayedHours = soloMinutesPlayedHours;
+        this.soloKillsPerMinute = soloKillsPerMinute;
+        this.soloKillsPerMinuteRank = soloKillsPerMinuteRank;
+        this.soloKillsPerMatch = soloKillsPerMatch;
+        this.soloKillsPerMatchRank = soloKillsPerMatchRank;
+        this.soloAvgMatchTime = soloAvgMatchTime;
+        this.soloAvgMatchTimeRank = soloAvgMatchTimeRank;
+        this.soloScorePerMatch = soloScorePerMatch;
+        this.soloScorePerMatchRank = soloScorePerMatchRank;
+        this.soloScorePerMinute = soloScorePerMinute;
+        this.soloScorePerMinuteRank = soloScorePerMinuteRank;
+        this.duoScore = duoScore;
+        this.duoScoreRank = duoScoreRank;
+        this.duoTop1 = duoTop1;
+        this.duoTop1Rank = duoTop1Rank;
+        this.duoTop5 = duoTop5;
+        this.duoTop5Rank = duoTop5Rank;
+        this.duoTop12 = duoTop12;
+        this.duoTop12Rank = duoTop12Rank;
+        this.duoKillDeath = duoKillDeath;
+        this.duoKillDeathRank = duoKillDeathRank;
+        this.duoWinRadio = duoWinRadio;
+        this.duoWinRadioRank = duoWinRadioRank;
+        this.duoMatches = duoMatches;
+        this.duoMatchesRank = duoMatchesRank;
+        this.duoKills = duoKills;
+        this.duoKillsRank = duoKillsRank;
+        this.duoMinutesPlayed = duoMinutesPlayed;
+        this.duoMinutesPlayedRank = duoMinutesPlayedRank;
+        this.duoMinutesPlayedHours = duoMinutesPlayedHours;
+        this.duoKillsPerMinute = duoKillsPerMinute;
+        this.duoKillsPerMinuteRank = duoKillsPerMinuteRank;
+        this.duoKillsPerMatch = duoKillsPerMatch;
+        this.duoKillsPerMatchRank = duoKillsPerMatchRank;
+        this.duoAvgMatchTime = duoAvgMatchTime;
+        this.duoAvgMatchTimeRank = duoAvgMatchTimeRank;
+        this.duoScorePerMatch = duoScorePerMatch;
+        this.duoScorePerMatchRank = duoScorePerMatchRank;
+        this.duoScorePerMinute = duoScorePerMinute;
+        this.duoScorePerMinuteRank = duoScorePerMinuteRank;
+        this.squadScore = squadScore;
+        this.squadScoreRank = squadScoreRank;
+        this.squadTop1 = squadTop1;
+        this.squadTop1Rank = squadTop1Rank;
+        this.squadTop3 = squadTop3;
+        this.squadTop3Rank = squadTop3Rank;
+        this.squadTop6 = squadTop6;
+        this.squadTop6Rank = squadTop6Rank;
+        this.squadKillDeath = squadKillDeath;
+        this.squadKillDeathRank = squadKillDeathRank;
+        this.squadWinRadio = squadWinRadio;
+        this.squadWinRadioRank = squadWinRadioRank;
+        this.squadMatches = squadMatches;
+        this.squadMatchesRank = squadMatchesRank;
+        this.squadKills = squadKills;
+        this.squadKillsRank = squadKillsRank;
+        this.squadMinutesPlayed = squadMinutesPlayed;
+        this.squadMinutesPlayedRank = squadMinutesPlayedRank;
+        this.squadMinutesPlayedHours = squadMinutesPlayedHours;
+        this.squadKillsPerMinute = squadKillsPerMinute;
+        this.squadKillsPerMinuteRank = squadKillsPerMinuteRank;
+        this.squadKillsPerMatch = squadKillsPerMatch;
+        this.squadKillsPerMatchRank = squadKillsPerMatchRank;
+        this.squadAvgMatchTime = squadAvgMatchTime;
+        this.squadAvgMatchTimeRank = squadAvgMatchTimeRank;
+        this.squadScorePerMatch = squadScorePerMatch;
+        this.squadScorePerMatchRank = squadScorePerMatchRank;
+        this.squadScorePerMinute = squadScorePerMinute;
+        this.squadScorePerMinuteRank = squadScorePerMinuteRank;
+        this.lifeTimeScore = lifeTimeScore;
+        this.lifeTimeMatchesPlayed = lifeTimeMatchesPlayed;
+        this.lifeTimeWins = lifeTimeWins;
+        this.lifeTimeWinsProcent = lifeTimeWinsProcent;
+        this.lifeTimeKills = lifeTimeKills;
+        this.lifeTimeKillDeath = lifeTimeKillDeath;
+        this.lifeTimeKillsPerMinute = lifeTimeKillsPerMinute;
+        this.lifeTimeTimePlayed = lifeTimeTimePlayed;
+        this.lifeTimeAvgSurvivalTime = lifeTimeAvgSurvivalTime;
+    }
 
     private String accountId;
     private int platformId;

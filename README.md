@@ -14,7 +14,7 @@ Tests are to be added by contributors when implementing a function.
 * [GSON](https://github.com/google/gson) - JSON parser used
 * [gradle](https://gradle.org/) - Dependency Management
 * [Android Studio](https://developer.android.com/studio/index.html) - IDE used by original contributors
-
+* [SugarORM](http://satyan.github.io/sugar/) - ORM Library
 ```
 UI Framework to be added
 ```
